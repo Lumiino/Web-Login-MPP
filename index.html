@@ -9,10 +9,16 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #0000FF, #800080); /* Dari biru ke ungu */
             display: flex;
+            flex-direction: column; /* Mengatur arah elemen secara vertikal */
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .login-container {
             background-color: #fff;
@@ -62,7 +68,7 @@
             event.preventDefault(); // Mencegah form terkirim secara default
             const passwordInput = document.getElementById("password").value;
             if (passwordInput === "2008") {
-                // Mengarahkan ke halaman tujuan
+                // Ganti dengan halaman tujuan yang sesuai
                 window.location.href = "https://lumiino.github.io/Tugas-Web-MPP/";
             } else {
                 alert("Password salah! Silakan coba lagi.");
@@ -71,6 +77,8 @@
     </script>
 </head>
 <body>
+
+    <h1>Selamat Datang di Web Ravinza</h1>
 
     <div class="login-container">
         <h2>Login</h2>
